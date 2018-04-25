@@ -5,7 +5,7 @@ Author : SangMin LEE
 api/user/로 API 분리
 --------------------
 
-## 1. 기존 API Server는 Project folder의 index.js에 통짜구조를 가짐. ##
+### 1. 기존 API Server는 Project folder의 index.js에 통짜구조를 가짐. ###
 
 >  기존 Project folder의 index.js예시 
 
@@ -51,7 +51,7 @@ api/user/로 API 분리
     })
 
 
-## 2. {Projectfolder}/api/user/로 API분리 ##
+### 2. {Projectfolder}/api/user/로 API분리 ###
 
 > /api/user/index.js로 API분리 예시
 
@@ -115,27 +115,4 @@ api/user/로 API 분리
 
 
 
-## npm install ##
-> - **necessary module install**
-> -     $npm init (package.json 파일 생성) 
-> -     $npm install express --save
-> -     $npm install body-parser --save
-> -     $npm install morgan --save
-
-> - **test module install** 
-> -     $npm install mocha --save-dev
-> -     $npm install should --save-dev
-> -     $npm install supertest --save-dev
-
-> - **npm start or npm test**
-> -     $npm start (or) npm test
-
-## Package.json Script ##
-
-**{Projectfolder}/package.json**   
-
-    "scripts": {
-        "start": "node bin/www.js"
-        "test": "NODE_ENV=test mocha api/user/user.spec.js -w"
-    }
 
