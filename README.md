@@ -1,6 +1,6 @@
-TDD, Nodejs Server API server 개발2
+Nodejs Server API server 개발2
 ==================================
-Author : SangMin LEE
+
 
 api/user/로 API 분리
 --------------------
@@ -11,7 +11,7 @@ api/user/로 API 분리
 
 **{Projectfolder}/index.js**
 
-
+```javascript
     const express = require('express')
     const logger = require('morgan')
     const bodyParser = require('body-parser')
@@ -49,7 +49,7 @@ api/user/로 API 분리
 
         res.json(user)
     })
-
+```
 
 ### 2. {Projectfolder}/api/user/로 API분리 ###
 
@@ -57,7 +57,7 @@ api/user/로 API 분리
 
 **a. {Projectfolder}/index.js**
 
-
+```javascript
     var express = require('express');
     var morgan = require('morgan');
     var bodyParser = require('body-parser');
@@ -112,7 +112,7 @@ api/user/로 API 분리
     });
 
     module.exports = router;
-
+```
 
 
 
