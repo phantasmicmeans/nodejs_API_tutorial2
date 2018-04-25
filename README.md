@@ -75,10 +75,11 @@ api/user/로 API 분리
     app.use(user);
 
     module.exports = app;
-
+```
 
 **b. {Projectfolder}/api/user/index.js**
 
+```javascript
     const express = require('express');
     const router = express.Router();
 
